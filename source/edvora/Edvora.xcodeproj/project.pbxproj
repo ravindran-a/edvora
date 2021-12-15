@@ -37,6 +37,7 @@
 		DEB7B952276A77AD009C5F78 /* Inter-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEB7B940276A77AD009C5F78 /* Inter-ExtraLightItalic.ttf */; };
 		DEB7B953276A77AD009C5F78 /* Inter-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEB7B941276A77AD009C5F78 /* Inter-LightItalic.ttf */; };
 		DEB7B956276A7903009C5F78 /* InterFontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7B955276A7903009C5F78 /* InterFontManager.swift */; };
+		DEB7B958276A7EA2009C5F78 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB7B957276A7EA2009C5F78 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		DEB7B940276A77AD009C5F78 /* Inter-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		DEB7B941276A77AD009C5F78 /* Inter-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-LightItalic.ttf"; sourceTree = "<group>"; };
 		DEB7B955276A7903009C5F78 /* InterFontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFontManager.swift; sourceTree = "<group>"; };
+		DEB7B957276A7EA2009C5F78 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E98B97333DF4FAE7BF3FF145 /* Pods-Edvora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edvora.debug.xcconfig"; path = "Target Support Files/Pods-Edvora/Pods-Edvora.debug.xcconfig"; sourceTree = "<group>"; };
 		FB8BD0E16DB98D5C2583DE89 /* Pods_EdvoraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EdvoraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -244,6 +246,7 @@
 				DEB7B92E276A7577009C5F78 /* Fonts */,
 				DEB7B8F8276A6F5F009C5F78 /* Assets.xcassets */,
 				DEB7B8FA276A6F5F009C5F78 /* Preview Content */,
+				DEB7B957276A7EA2009C5F78 /* Launch Screen.storyboard */,
 			);
 			path = AppResources;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				DEB7B949276A77AD009C5F78 /* Inter-ExtraLight.ttf in Resources */,
 				DEB7B947276A77AD009C5F78 /* Inter-Italic.ttf in Resources */,
 				DEB7B94A276A77AD009C5F78 /* Inter-SemiBoldItalic.ttf in Resources */,
+				DEB7B958276A7EA2009C5F78 /* Launch Screen.storyboard in Resources */,
 				DEB7B942276A77AD009C5F78 /* Inter-Light.ttf in Resources */,
 				DEB7B943276A77AD009C5F78 /* Inter-BoldItalic.ttf in Resources */,
 				DEB7B94E276A77AD009C5F78 /* Inter-Bold.ttf in Resources */,
@@ -749,6 +753,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Edvora;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -782,6 +787,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Edvora;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
