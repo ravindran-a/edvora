@@ -9,7 +9,7 @@ Works in iPhone SE, iPhone 13, iPad
 
 Main Project Target:
 
-FoodyCookBook
+Edvora
 
 Supporting Third Party Libraries Used:
 
