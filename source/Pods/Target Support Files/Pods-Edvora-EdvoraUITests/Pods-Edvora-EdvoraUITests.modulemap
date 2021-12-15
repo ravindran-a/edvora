@@ -1,0 +1,6 @@
+framework module Pods_Edvora_EdvoraUITests {
+  umbrella header "Pods-Edvora-EdvoraUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
