@@ -35,4 +35,16 @@ class InterFontManager {
         return Font.custom(InterFonts.interRegular.rawValue, size: size)
     }
     
+    static func getMediumFont(size: CGFloat) -> Font {
+        return Font.custom(InterFonts.interMedium.rawValue, size: size)
+    }
+    
+    static func getBoldFont(size: CGFloat) -> Font {
+        return Font.custom(InterFonts.interBold.rawValue, size: size)
+    }
+    
+    static func getSemiBoldFont(size: CGFloat) -> Font {
+        return Font.custom(InterFonts.interSemiBold.rawValue, size: size)
+    }
+    
 }
