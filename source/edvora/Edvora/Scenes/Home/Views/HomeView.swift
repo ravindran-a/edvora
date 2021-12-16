@@ -9,10 +9,26 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @StateObject var homeViewModel = HomeViewModel()
     
+    var closeButton: some View {
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Text("Logout")
+        }
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hi There! Welcome to Edvora!")
+                .foregroundColor(.accentColor)
+        }
+        .navigationBarTitle("Edvora Home")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing: closeButton)
+        .navigationBarBackButtonHidden(true)
     }
     
 }

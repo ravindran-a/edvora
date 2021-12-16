@@ -10,6 +10,7 @@
 		6CA553D7856B0892074A52A3 /* Pods_EdvoraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8BD0E16DB98D5C2583DE89 /* Pods_EdvoraTests.framework */; };
 		6EC1C6CC6FCA459D4847A3D2 /* Pods_Edvora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8D394CCCDB8A8C59DC6D38 /* Pods_Edvora.framework */; };
 		72C8097EFC38181A828B53F5 /* Pods_Edvora_EdvoraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7A06C3F50F1E8E39539703 /* Pods_Edvora_EdvoraUITests.framework */; };
+		DE3CAC56276B3A2F0031BDE6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3CAC55276B3A2F0031BDE6 /* String+Extensions.swift */; };
 		DEB7B8F5276A6F5D009C5F78 /* EdvoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB7B8F4276A6F5D009C5F78 /* EdvoraApp.swift */; };
 		DEB7B8F9276A6F5F009C5F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB7B8F8276A6F5F009C5F78 /* Assets.xcassets */; };
 		DEB7B8FC276A6F5F009C5F78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB7B8FB276A6F5F009C5F78 /* Preview Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		BC1291CCB832F548F25FBCB1 /* Pods-Edvora-EdvoraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edvora-EdvoraUITests.release.xcconfig"; path = "Target Support Files/Pods-Edvora-EdvoraUITests/Pods-Edvora-EdvoraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C470601D94258FAE701F8536 /* Pods-EdvoraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EdvoraTests.release.xcconfig"; path = "Target Support Files/Pods-EdvoraTests/Pods-EdvoraTests.release.xcconfig"; sourceTree = "<group>"; };
 		C738BFBE83A1E94B96E67D56 /* Pods-Edvora-EdvoraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Edvora-EdvoraUITests.debug.xcconfig"; path = "Target Support Files/Pods-Edvora-EdvoraUITests/Pods-Edvora-EdvoraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE3CAC55276B3A2F0031BDE6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		DEB7B8F1276A6F5D009C5F78 /* Edvora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edvora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB7B8F4276A6F5D009C5F78 /* EdvoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraApp.swift; sourceTree = "<group>"; };
 		DEB7B8F8276A6F5F009C5F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 		DEB7B959276A80D4009C5F78 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DE3CAC55276B3A2F0031BDE6 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -718,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEB7B970276B0B5A009C5F78 /* LoginRequest.swift in Sources */,
+				DE3CAC56276B3A2F0031BDE6 /* String+Extensions.swift in Sources */,
 				DEB7B92B276A7236009C5F78 /* LoginView.swift in Sources */,
 				DEB7B976276B1AFA009C5F78 /* PasswordTextField.swift in Sources */,
 				DEB7B956276A7903009C5F78 /* InterFontManager.swift in Sources */,

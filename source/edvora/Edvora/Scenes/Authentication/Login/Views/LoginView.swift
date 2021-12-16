@@ -6,19 +6,31 @@
 //
 
 import SwiftUI
+import Combine
 
 struct LoginView: View {
     
     @StateObject var loginViewModel = LoginViewModel()
+    @State var showSignUpView: Bool = false
+    @State var showHomeView: Bool = false
     @State var showForgotPasswordView: Bool = false
     @State var userName: String = ""
     @State var password: String = ""
     @State var emailAddress: String = ""
     @State var isEditing = false
+    @State var showAlert = false
     
     var body: some View {
-        loginView
-            //.background(Color("BackgroundColor"))
+        NavigationView {
+            ZStack {
+                Color.white
+                loginView
+            }
+            .preferredColorScheme(.light)
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Enter Valid Credential"), message: Text(loginViewModel.alertMessage), dismissButton: .default(Text("OK"), action: {}))
+            }
+        }
     }
     
     var loginView: some View {
@@ -43,8 +55,18 @@ struct LoginView: View {
     
     var loginButton: some View {
         VStack(spacing: 30) {
+            NavigationLink("", destination: HomeView(), isActive: $showHomeView)
             Button {
-                
+                loginViewModel.loginRequest.userName = self.userName
+                loginViewModel.loginRequest.emailAddress = self.emailAddress
+                loginViewModel.loginRequest.password = self.password
+                loginViewModel.validateFields { isValid in
+                    if isValid {
+                        showHomeView = true
+                    } else {
+                        showAlert = true
+                    }
+                }
             } label: {
                 Text("LOGIN")
             }.buttonStyle(FilledButton(fillColor: Color("ButtonColor"), font: InterFontManager.getSemiBoldFont(size: 20.0), foregroundColor: .white))
@@ -54,7 +76,7 @@ struct LoginView: View {
     
     var signUpButton: some View {
         Button {
-            
+            showSignUpView = true
         } label: {
             Text("Don’t have an account? ")
                 .font(InterFontManager.getRegularFont(size: 15.0))
@@ -69,8 +91,10 @@ struct LoginView: View {
     var signUpFields: some View {
         VStack(spacing: 25) {
             LoginTextField(value: $userName, placeHolder: "Username", fieldIcon: "PersonIcon")
+                .autocapitalization(.none)
             PasswordTextField(value: $password)
             LoginTextField(value: $emailAddress, placeHolder: "Email address", fieldIcon: "EmailNotationIcon")
+                .autocapitalization(.none)
             HStack {
                 Spacer()
                 forgotPasswordButton
